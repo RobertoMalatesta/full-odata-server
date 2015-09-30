@@ -1,0 +1,20 @@
+{
+  "name": "full-odata-server",
+  "version": "0.0.0",
+  "description": "full-odata-server",
+  "main": "index.js",
+  "author": {
+    "name": "Jochen Bohn",
+    "email": "bohn.jochen@gmx.de"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "chai": "^3.3.0",
+    "express": "^4.13.3",
+    "mocha": "^2.3.3",
+    "mongoose": "^4.1.9"
+  }
+}
