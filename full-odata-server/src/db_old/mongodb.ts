@@ -1,5 +1,4 @@
-﻿/// <reference path="../def/mongoose.d.ts"/>
-import mongoose = require('mongoose');
+﻿import mongoose = require('mongoose');
 
 export class MongoDB {
     private dbUrl: string;

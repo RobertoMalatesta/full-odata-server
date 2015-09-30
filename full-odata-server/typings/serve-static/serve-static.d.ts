@@ -10,8 +10,8 @@
 
  =============================================== */
 
-/// <reference path="./express.d.ts" />
-/// <reference path="./mime.d.ts" />
+/// <reference path="../express/express.d.ts" />
+/// <reference path="../mime/mime.d.ts" />
 
 declare module "serve-static" {
     import * as express from "express";
@@ -49,7 +49,7 @@ declare module "serve-static" {
          * By default this module will send "index.html" files in response to a request on a directory.
          * To disable this set false or to supply a new index pass a string or an array in preferred order.
          */
-        index?: boolean | string | string[];
+        index?: boolean|string|string[];
 
         /**
          * Enable or disable Last-Modified header, defaults to true. Uses the file system's last modified value.
@@ -59,7 +59,7 @@ declare module "serve-static" {
         /**
          * Provide a max-age in milliseconds for http caching, defaults to 0. This can also be a string accepted by the ms module.
          */
-        maxAge?: number | string;
+        maxAge?: number|string;
 
         /**
          * Redirect to trailing "/" when the pathname is a dir. Defaults to true.

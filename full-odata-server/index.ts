@@ -1,3 +1,5 @@
-﻿import src = require('./src/index_old');
+﻿/// <reference path="typings/tsd.d.ts" />
 
-export = src;
+//import src = require('./src/index_old');
+
+//export = src;

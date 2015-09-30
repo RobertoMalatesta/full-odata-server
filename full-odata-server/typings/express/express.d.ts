@@ -1,4 +1,4 @@
-﻿// Type definitions for Express 4.x
+// Type definitions for Express 4.x
 // Project: http://expressjs.com
 // Definitions by: Boris Yankov <https://github.com/borisyankov/>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
@@ -10,8 +10,8 @@
 
  =============================================== */
 
-/// <reference path="./node.d.ts" />
-/// <reference path="./serve-static.d.ts" />
+/// <reference path="../node/node.d.ts" />
+/// <reference path="../serve-static/serve-static.d.ts" />
 
 declare module Express {
 
@@ -112,7 +112,7 @@ declare module "express" {
 
         export function Router(options?: any): Router;
 
-        export interface Router extends IRouter<Router> { }
+        export interface Router extends IRouter<Router> {}
 
         interface CookieOptions {
             maxAge?: number;
@@ -149,7 +149,7 @@ declare module "express" {
              *
              * @param name
              */
-            get(name: string): string;
+            get (name: string): string;
 
             header(name: string): string;
 
@@ -412,9 +412,9 @@ declare module "express" {
             originalUrl: string;
 
             url: string;
-
+            
             baseUrl: string;
-
+            
             app: Application;
         }
 
@@ -422,7 +422,7 @@ declare module "express" {
             value: string;
             quality: number;
             type: string;
-            subtype: string;
+            subtype:  string;
         }
 
         interface Send {
@@ -702,7 +702,7 @@ declare module "express" {
              *
              * @param field
              */
-            get(field: string): string;
+            get (field: string): string;
 
             /**
              * Clear cookie `name`.
@@ -793,8 +793,8 @@ declare module "express" {
              *  - `cache`     boolean hinting to the engine it should cache
              *  - `filename`  filename of the view being rendered
              */
-            render(view: string, options?: Object, callback?: (err: Error, html: string) => void): void;
-            render(view: string, callback?: (err: Error, html: string) => void): void;
+            render(view: string, options?: Object, callback?: (err: Error, html: string) => void ): void;
+            render(view: string, callback?: (err: Error, html: string) => void ): void;
 
             locals: any;
 
@@ -809,7 +809,7 @@ declare module "express" {
             (req: Request, res: Response, next: Function): any;
         }
 
-        interface Handler extends RequestHandler { }
+        interface Handler extends RequestHandler {}
 
         interface RequestParamHandler {
             (req: Request, res: Response, next: Function, param: any): any;

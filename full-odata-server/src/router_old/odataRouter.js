@@ -1,24 +1,24 @@
-/// <reference path="../def/express.d.ts"/>
-var express = require('express');
-var ODataRouter = (function () {
-    function ODataRouter(odataServer) {
-        this.init(odataServer);
-    }
-    ODataRouter.prototype.init = function (odataServer) {
-        this.router = express.Router();
-        this.defineRoutes(odataServer);
-    };
-    ODataRouter.prototype.defineRoutes = function (odataServer) {
-        this.router.get('/', function (req, res) {
-            res.send('hello world');
-        });
-        odataServer.getModels().forEach(function (element, index, array) {
-            console.log(element);
-        });
-    };
-    ODataRouter.prototype.getRouter = function () {
-        return this.router;
-    };
-    return ODataRouter;
-})();
-exports.ODataRouter = ODataRouter;
+//import express = require('express');
+//import odata = require('../index_old');
+//export class ODataRouter {
+//    private server: odata.ODataServer;
+//    private router: express.Router;
+//    constructor(odataServer: odata.ODataServer) {
+//        this.init(odataServer);
+//    }
+//    private init(odataServer: odata.ODataServer) {
+//        this.router = express.Router();
+//        this.defineRoutes(odataServer);
+//    }
+//    private defineRoutes(odataServer: odata.ODataServer) {
+//        this.router.get('/', function (req, res) {
+//            res.send('hello world');
+//        });
+//        odataServer.getModels().forEach(function (element, index, array) {
+//            console.log(element);
+//        });
+//    }
+//    getRouter(): express.Router {
+//        return this.router;
+//    }
+//} 

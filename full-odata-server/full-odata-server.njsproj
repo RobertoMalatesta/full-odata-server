@@ -33,20 +33,24 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".tsdrc" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\model\" />
+    <Folder Include="src\db\" />
+    <Folder Include="src\utils\" />
+    <Folder Include="test\db\" />
+    <Folder Include="test\utils\" />
     <Folder Include="test\" />
     <Folder Include="src\db_old\" />
-    <Folder Include="src\model_old\" />
-    <Folder Include="src\def\" />
     <Folder Include="src\odata_old\" />
     <Folder Include="src\router_old\" />
     <Folder Include="examples\" />
     <Folder Include="src\" />
     <Folder Include="examples\models\" />
+    <Folder Include="test\model\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="examples\app.ts" />
@@ -54,38 +58,37 @@
     <TypeScriptCompile Include="examples\models\book.ts" />
     <TypeScriptCompile Include="examples\models\category.ts" />
     <TypeScriptCompile Include="index.ts" />
+    <TypeScriptCompile Include="src\db\db.ts" />
+    <TypeScriptCompile Include="src\db\mongoDb.ts" />
     <TypeScriptCompile Include="src\db_old\mongodb.ts" />
-    <TypeScriptCompile Include="src\def\chai.d.ts">
-      <SubType>Code</SubType>
-      <TestFramework>
-      </TestFramework>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="src\def\express.d.ts" />
-    <TypeScriptCompile Include="src\def\mime.d.ts" />
-    <TypeScriptCompile Include="src\def\mocha.d.ts">
-      <SubType>Code</SubType>
-      <TestFramework>
-      </TestFramework>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="src\def\node.d.ts" />
-    <TypeScriptCompile Include="src\def\serve-static.d.ts" />
     <TypeScriptCompile Include="src\index_old.ts" />
     <TypeScriptCompile Include="src\model\attribute.ts" />
     <TypeScriptCompile Include="src\model\attributeOptions.ts" />
-    <TypeScriptCompile Include="src\model_old\attribute.ts" />
-    <TypeScriptCompile Include="src\model_old\attributeType.ts" />
-    <TypeScriptCompile Include="src\model_old\model.ts" />
+    <TypeScriptCompile Include="src\model\model.ts" />
     <TypeScriptCompile Include="src\odata_old\odataV4.ts" />
     <TypeScriptCompile Include="src\odata_old\odataV3.ts" />
     <TypeScriptCompile Include="src\odata_old\odataV2.ts" />
     <TypeScriptCompile Include="src\odata_old\odataV1.ts" />
     <TypeScriptCompile Include="src\odata_old\odataVersions.ts" />
     <TypeScriptCompile Include="src\router_old\odataRouter.ts" />
-    <TypeScriptCompile Include="test\attribute.ts">
+    <TypeScriptCompile Include="src\utils\converter.ts" />
+    <TypeScriptCompile Include="test\db\mongoDb.ts">
       <SubType>Code</SubType>
       <TestFramework>Mocha</TestFramework>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="test\attributeOptions.ts">
+    <TypeScriptCompile Include="test\model\attribute.ts">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\model\attributeOptions.ts">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\model\model.ts">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\utils\Converter.ts">
       <SubType>Code</SubType>
       <TestFramework>Mocha</TestFramework>
     </TypeScriptCompile>

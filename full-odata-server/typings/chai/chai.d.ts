@@ -1,4 +1,4 @@
-﻿// Type definitions for chai 3.2.0
+// Type definitions for chai 3.2.0
 // Project: http://chaijs.com/
 // Definitions by: Jed Mao <https://github.com/jedmao/>,
 //                 Bart van der Schoor <https://github.com/Bartvds>,
@@ -47,8 +47,8 @@ declare module Chai {
 
     interface ShouldThrow {
         (actual: Function): void;
-        (actual: Function, expected: string | RegExp, message?: string): void;
-        (actual: Function, constructor: Error | Function, expected?: string | RegExp, message?: string): void;
+        (actual: Function, expected: string|RegExp, message?: string): void;
+        (actual: Function, constructor: Error|Function, expected?: string|RegExp, message?: string): void;
     }
 
     interface Assertion extends LanguageChains, NumericComparison, TypeComparison {
@@ -198,7 +198,7 @@ declare module Chai {
     }
 
     interface Match {
-        (regexp: RegExp | string, message?: string): Assertion;
+        (regexp: RegExp|string, message?: string): Assertion;
     }
 
     interface Keys {

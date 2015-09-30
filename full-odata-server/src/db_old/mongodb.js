@@ -1,4 +1,3 @@
-/// <reference path="../def/mongoose.d.ts"/>
 var mongoose = require('mongoose');
 var MongoDB = (function () {
     function MongoDB(dbUrl) {
