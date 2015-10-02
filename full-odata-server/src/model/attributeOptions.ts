@@ -1,10 +1,11 @@
 ﻿export class AttributeOptions {
     private type: string;
-    private ref: string;
+    private ref: string = null;
 
     constructor(type: string, ref?: string) {
         this.type = type;
-        this.ref = ref;
+        if (ref)
+            this.ref = ref;
     }
 
     getType(): string {

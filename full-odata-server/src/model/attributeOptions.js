@@ -1,7 +1,9 @@
 var AttributeOptions = (function () {
     function AttributeOptions(type, ref) {
+        this.ref = null;
         this.type = type;
-        this.ref = ref;
+        if (ref)
+            this.ref = ref;
     }
     AttributeOptions.prototype.getType = function () {
         return this.type;
